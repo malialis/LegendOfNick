@@ -1,0 +1,96 @@
+fileFormatVersion: 2
+guid: 731536212295e462589de9536f327d7e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors:
+  - Errors detected in tileset 'NewOverWorldTileSet.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
+  - Could not find tile 1. Make sure the tilesets were successfully imported.
+  - Could not find tile 1201. Make sure the tilesets were successfully imported.
+  - Could not find tile 1202. Make sure the tilesets were successfully imported.
+  - Could not find tile 1203. Make sure the tilesets were successfully imported.
+  - Could not find tile 1161. Make sure the tilesets were successfully imported.
+  - Could not find tile 1322. Make sure the tilesets were successfully imported.
+  - Could not find tile 1281. Make sure the tilesets were successfully imported.
+  - Could not find tile 1243. Make sure the tilesets were successfully imported.
+  - Could not find tile 1162. Make sure the tilesets were successfully imported.
+  - Could not find tile 1163. Make sure the tilesets were successfully imported.
+  - Could not find tile 1321. Make sure the tilesets were successfully imported.
+  - Could not find tile 1242. Make sure the tilesets were successfully imported.
+  - Could not find tile 1282. Make sure the tilesets were successfully imported.
+  - Could not find tile 1241. Make sure the tilesets were successfully imported.
+  - Could not find tile 522. Make sure the tilesets were successfully imported.
+  - Could not find tile 603. Make sure the tilesets were successfully imported.
+  - Could not find tile 642. Make sure the tilesets were successfully imported.
+  - Could not find tile 641. Make sure the tilesets were successfully imported.
+  - Could not find tile 524. Make sure the tilesets were successfully imported.
+  - Could not find tile 562. Make sure the tilesets were successfully imported.
+  - Could not find tile 601. Make sure the tilesets were successfully imported.
+  - Could not find tile 561. Make sure the tilesets were successfully imported.
+  - Could not find tile 602. Make sure the tilesets were successfully imported.
+  - Could not find tile 604. Make sure the tilesets were successfully imported.
+  - Could not find tile 232. Make sure the tilesets were successfully imported.
+  - Could not find tile 233. Make sure the tilesets were successfully imported.
+  - Could not find tile 7. Make sure the tilesets were successfully imported.
+  - Could not find tile 8. Make sure the tilesets were successfully imported.
+  - Could not find tile 9. Make sure the tilesets were successfully imported.
+  - Could not find tile 10. Make sure the tilesets were successfully imported.
+  - Could not find tile 11. Make sure the tilesets were successfully imported.
+  - Could not find tile 109. Make sure the tilesets were successfully imported.
+  - Could not find tile 272. Make sure the tilesets were successfully imported.
+  - Could not find tile 273. Make sure the tilesets were successfully imported.
+  - Could not find tile 47. Make sure the tilesets were successfully imported.
+  - Could not find tile 48. Make sure the tilesets were successfully imported.
+  - Could not find tile 49. Make sure the tilesets were successfully imported.
+  - Could not find tile 50. Make sure the tilesets were successfully imported.
+  - Could not find tile 51. Make sure the tilesets were successfully imported.
+  - Could not find tile 87. Make sure the tilesets were successfully imported.
+  - Could not find tile 88. Make sure the tilesets were successfully imported.
+  - Could not find tile 89. Make sure the tilesets were successfully imported.
+  - Could not find tile 90. Make sure the tilesets were successfully imported.
+  - Could not find tile 91. Make sure the tilesets were successfully imported.
+  - Could not find tile 389. Make sure the tilesets were successfully imported.
+  - Could not find tile 390. Make sure the tilesets were successfully imported.
+  - Could not find tile 391. Make sure the tilesets were successfully imported.
+  - Could not find tile 127. Make sure the tilesets were successfully imported.
+  - Could not find tile 128. Make sure the tilesets were successfully imported.
+  - Could not find tile 129. Make sure the tilesets were successfully imported.
+  - Could not find tile 130. Make sure the tilesets were successfully imported.
+  - Could not find tile 131. Make sure the tilesets were successfully imported.
+  - Could not find tile 429. Make sure the tilesets were successfully imported.
+  - Could not find tile 430. Make sure the tilesets were successfully imported.
+  - Could not find tile 431. Make sure the tilesets were successfully imported.
+  - Could not find tile 167. Make sure the tilesets were successfully imported.
+  - Could not find tile 168. Make sure the tilesets were successfully imported.
+  - Could not find tile 169. Make sure the tilesets were successfully imported.
+  - Could not find tile 170. Make sure the tilesets were successfully imported.
+  - Could not find tile 171. Make sure the tilesets were successfully imported.
+  - Could not find tile 469. Make sure the tilesets were successfully imported.
+  - Could not find tile 470. Make sure the tilesets were successfully imported.
+  - Could not find tile 471. Make sure the tilesets were successfully imported.
+  - Could not find tile 152. Make sure the tilesets were successfully imported.
+  - Could not find tile 153. Make sure the tilesets were successfully imported.
+  - Could not find tile 192. Make sure the tilesets were successfully imported.
+  - Could not find tile 193. Make sure the tilesets were successfully imported.
+  warnings:
+  - Pixels Per Unit mismatch between map (100) and tileset 'NewOverWorldTileSet.tsx'
+    (16)
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 21
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
