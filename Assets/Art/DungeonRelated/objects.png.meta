@@ -13,19 +13,19 @@ TextureImporter:
     second: objects_2
   - first:
       213: -4430392651179603617
-    second: objects_3
+    second: Heart01
   - first:
       213: 2654447934904345190
-    second: objects_4
+    second: Heart02
   - first:
       213: -3276687688264177478
-    second: objects_5
+    second: Heart03
   - first:
       213: 5069650035751226587
-    second: objects_6
+    second: Heart04
   - first:
       213: -9053378900703536071
-    second: objects_7
+    second: Heart05
   - first:
       213: 1336440320741484319
     second: objects_8
@@ -373,7 +373,7 @@ TextureImporter:
     second: objects_122
   - first:
       213: -3855957774892257989
-    second: objects_123
+    second: HUD
   - first:
       213: 4307177417163183746
     second: objects_124
@@ -429,7 +429,7 @@ TextureImporter:
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -489,7 +489,7 @@ TextureImporter:
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -501,7 +501,7 @@ TextureImporter:
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -513,7 +513,7 @@ TextureImporter:
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -525,7 +525,7 @@ TextureImporter:
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -599,7 +599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_3
+      name: Heart01
       rect:
         serializedVersion: 2
         x: 64
@@ -620,7 +620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_4
+      name: Heart02
       rect:
         serializedVersion: 2
         x: 80
@@ -641,7 +641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_5
+      name: Heart03
       rect:
         serializedVersion: 2
         x: 96
@@ -662,7 +662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_6
+      name: Heart04
       rect:
         serializedVersion: 2
         x: 112
@@ -683,7 +683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_7
+      name: Heart05
       rect:
         serializedVersion: 2
         x: 128
@@ -2783,11 +2783,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_123
+      name: HUD
       rect:
         serializedVersion: 2
-        x: 0
-        y: 41
+        x: 336
+        y: 91
         width: 78
         height: 53
       alignment: 7

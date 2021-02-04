@@ -28,7 +28,7 @@ public class Breakable : MonoBehaviour
     {
         yield return new WaitForSeconds(0.55f);
         this.gameObject.SetActive(false);
-        Debug.Log("I am now broken and disabled");
+        Debug.Log("I am now broken...");
     }
 
 }

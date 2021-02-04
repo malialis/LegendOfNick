@@ -6,7 +6,9 @@ public enum PlayerState
 {
     walk,
     attack,
+    death,
     stagger,
+    idle,
     interact
 }
 
@@ -14,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
     public float speed;
+    public FloatValue currentHealth;
+    public SignalSender playerHealthSignal;
 
     private Rigidbody2D myRigidBody;
     private Animator animator;
@@ -30,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        currentState = PlayerState.walk;
+        animator.SetFloat("moveX", 0);
+        animator.SetFloat("moveY", -1);
     }
 
     // Update is called once per frame
@@ -43,8 +51,7 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(AttackCoroutine());
         }
-        else if (Input.GetButtonDown("secondAttack") && currentState != PlayerState.attack
-            && currentState != PlayerState.stagger)
+        else if (Input.GetButtonDown("secondAttack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
             StartCoroutine(SecondaryAttackCoroutine());
         }
@@ -54,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (currentState == PlayerState.walk)
+        if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMovement();
         }
@@ -62,6 +69,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void MoveCharacter()
     {
+        change.Normalize();
+
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 
@@ -80,6 +89,35 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private IEnumerator KnockCoroutine(float knockbackTime)
+    {
+        if (myRigidBody != null)
+        {
+            yield return new WaitForSeconds(knockbackTime);
+            myRigidBody.velocity = Vector2.zero;
+            currentState = PlayerState.idle;
+            myRigidBody.velocity = Vector2.zero;
+        }
+    }
+
+    public void Knock(float knockbackTime, float damage)
+    {
+        currentHealth.RuntimeValue -= damage;
+        playerHealthSignal.Raise();
+        if (currentHealth.RuntimeValue > 0)
+        {
+            //playerHealthSignal.Raise();
+            StartCoroutine(KnockCoroutine(knockbackTime));
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
+        
+    }
+
+    #region Attacks
+
     private IEnumerator AttackCoroutine()
     {
         animator.SetBool("attacking", true);
@@ -87,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
 
         yield return null;
         animator.SetBool("attacking", false);
+        Debug.Log("I have struck something");
         yield return new WaitForSeconds(0.25f);
         currentState = PlayerState.walk;
     }
@@ -101,5 +140,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
         currentState = PlayerState.walk;
     }
+
+
+    #endregion
 
 }

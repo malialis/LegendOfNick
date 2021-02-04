@@ -29,12 +29,13 @@ public class RoomTransition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
             {
             cam.minPosition += cameraChange;
             cam.maxPosition += cameraChange;
 
             other.transform.position += playerChange;
+            StartCoroutine(RoomChangeWalkDelay(other));
             if (needText)
             {
                 StartCoroutine(PlaceNameCoroutine());
@@ -48,6 +49,14 @@ public class RoomTransition : MonoBehaviour
         placeText.text = placeName;
         yield return new WaitForSeconds(4f);
         text.SetActive(false);
+    }
+
+    private IEnumerator RoomChangeWalkDelay(Collider2D other)
+    {
+        other.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+        yield return new WaitForSeconds(3f);
+
+        other.GetComponent<PlayerMovement>().currentState = PlayerState.walk;
     }
 
 }
