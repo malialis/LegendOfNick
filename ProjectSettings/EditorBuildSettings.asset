@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/HouseInterior.unity
+    guid: ee0644e091f9b40bcb2add5e060fa7e3
+  - enabled: 1
+    path: Assets/Scenes/OverWorld.unity
+    guid: 4db1c0b902a6145c394e90b3d36a3c3a
   m_configObjects: {}

@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public FloatValue currentHealth;
     public SignalSender playerHealthSignal;
+    public VectorValue startingPosition;
 
     private Rigidbody2D myRigidBody;
     private Animator animator;
@@ -38,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
         currentState = PlayerState.walk;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
+
+        transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame

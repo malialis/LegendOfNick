@@ -28,10 +28,10 @@ TextureImporter:
     second: Heart05
   - first:
       213: 1336440320741484319
-    second: objects_8
+    second: SmallChestClosed
   - first:
       213: -93750458980389090
-    second: objects_9
+    second: SmallChestOpen
   - first:
       213: 4455232240493665095
     second: objects_10
@@ -40,19 +40,19 @@ TextureImporter:
     second: objects_11
   - first:
       213: 6639657697291588988
-    second: objects_12
+    second: BookClosed
   - first:
       213: 4444980147945960928
-    second: objects_13
+    second: BookOpen01
   - first:
       213: -2069660456029034469
-    second: objects_14
+    second: BookOpen02
   - first:
       213: -5843391103799036864
-    second: objects_15
+    second: BookOpen03
   - first:
       213: -3727842135710763035
-    second: objects_16
+    second: BookOpen04
   - first:
       213: -6050296909894318094
     second: objects_17
@@ -70,10 +70,10 @@ TextureImporter:
     second: objects_21
   - first:
       213: 7206194005228167239
-    second: objects_22
+    second: SmallChestHalfOpen
   - first:
       213: -4922617476772045510
-    second: objects_23
+    second: SmallChest34Open
   - first:
       213: 5849325189442884660
     second: objects_24
@@ -704,7 +704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_8
+      name: SmallChestClosed
       rect:
         serializedVersion: 2
         x: 149
@@ -725,13 +725,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_9
+      name: SmallChestOpen
       rect:
         serializedVersion: 2
-        x: 182
+        x: 181
         y: 304
-        width: 21
-        height: 15
+        width: 22
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -788,7 +788,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_12
+      name: BookClosed
       rect:
         serializedVersion: 2
         x: 247
@@ -809,7 +809,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_13
+      name: BookOpen01
       rect:
         serializedVersion: 2
         x: 263
@@ -830,7 +830,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_14
+      name: BookOpen02
       rect:
         serializedVersion: 2
         x: 279
@@ -851,7 +851,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_15
+      name: BookOpen03
       rect:
         serializedVersion: 2
         x: 291
@@ -872,7 +872,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_16
+      name: BookOpen04
       rect:
         serializedVersion: 2
         x: 305
@@ -998,7 +998,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_22
+      name: SmallChestHalfOpen
       rect:
         serializedVersion: 2
         x: 197
@@ -1019,7 +1019,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_23
+      name: SmallChest34Open
       rect:
         serializedVersion: 2
         x: 229

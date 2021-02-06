@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1602646659596631683}
   - component: {fileID: 5043713895640408267}
   - component: {fileID: 3621983956678219648}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Logman
   m_TagString: Enemy
   m_Icon: {fileID: 0}

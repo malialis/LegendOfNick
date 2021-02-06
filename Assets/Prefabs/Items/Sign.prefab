@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 553711479522133336}
   - component: {fileID: 7632174803180297698}
   - component: {fileID: 1838364477174852461}
-  - component: {fileID: 3418622883317225226}
+  - component: {fileID: 1715888626}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Untagged
@@ -137,7 +137,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3808308, y: 2.7916355}
   m_EdgeRadius: 0
---- !u!114 &3418622883317225226
+--- !u!114 &1715888626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,7 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb0b892bdb2c242f98f29480b37e11ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  context: {fileID: 11400000, guid: 445597ffd71e44b75ab18ab58cf3329a, type: 2}
+  playerInRange: 0
   dialogBox: {fileID: 0}
   dialogText: {fileID: 0}
-  dialog: This is a sign yo
-  playerInRange: 0
+  dialog: I am a sign yo

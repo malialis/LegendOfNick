@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Signs : MonoBehaviour
+public class Signs : Interactions
 {
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
-    public bool playerInRange;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,19 +33,11 @@ public class Signs : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Player in Range yo");
-            playerInRange = true;
-
-        }
-    }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            context.Raise();
             Debug.Log("Player has left yo");
             playerInRange = false;
             dialogBox.SetActive(false);

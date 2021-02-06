@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class RoomTransition : MonoBehaviour
 {
     public Vector2 cameraChange;
+    //public Vector2 cameraMinChange; if you have a different size
+    //public Vector2 cameraMaxChange;
     public Vector3 playerChange;
 
     public bool needText;
@@ -34,6 +36,9 @@ public class RoomTransition : MonoBehaviour
             cam.minPosition += cameraChange;
             cam.maxPosition += cameraChange;
 
+            //cam.minPosition += cameraMinChange;
+            //cam.maxPosition += cameraMaxChange;
+
             other.transform.position += playerChange;
             StartCoroutine(RoomChangeWalkDelay(other));
             if (needText)
@@ -54,7 +59,7 @@ public class RoomTransition : MonoBehaviour
     private IEnumerator RoomChangeWalkDelay(Collider2D other)
     {
         other.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.25f);
 
         other.GetComponent<PlayerMovement>().currentState = PlayerState.walk;
     }
