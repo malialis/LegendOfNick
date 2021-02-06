@@ -1928,6 +1928,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallTresureChest
       objectReference: {fileID: 0}
+    - target: {fileID: 691410844997914734, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 260320411}
+    - target: {fileID: 691410844997914734, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 260320410}
+    - target: {fileID: 691410844997914734, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: d135967fc6b2d4520adb53952d62f713, type: 2}
+    - target: {fileID: 691410844997914734, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: saveGame
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bc4ead6acc9047e990bec0e41a085a8, type: 2}
+    - target: {fileID: 691410844997914734, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: raiseItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 50cc150375a014d8183bb6d247c3fb15, type: 2}
+    - target: {fileID: 691410844997914734, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: contents
+      value: 
+      objectReference: {fileID: 11400000, guid: b71476a23778946a5a5b42966a8212da, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
 --- !u!1001 &2194579213338795141
@@ -2109,6 +2133,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b302458bbf374905a0659faf01a5368, type: 3}
+--- !u!1001 &5662849249152594052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334662, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 566385158820334683, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: m_Name
+      value: SmallTresureChest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 691410844997914734, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 260320411}
+    - target: {fileID: 691410844997914734, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 260320410}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a22b63d21ddda4725b9fc53d6dfb566c, type: 3}
 --- !u!1001 &5853524437807080826
 PrefabInstance:
   m_ObjectHideFlags: 0

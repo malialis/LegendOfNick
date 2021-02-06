@@ -171,3 +171,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: {fileID: 11400000, guid: 445597ffd71e44b75ab18ab58cf3329a, type: 2}
   playerInRange: 0
+  contents: {fileID: 11400000, guid: b71476a23778946a5a5b42966a8212da, type: 2}
+  isOpen: 0
+  raiseItem: {fileID: 11400000, guid: 50cc150375a014d8183bb6d247c3fb15, type: 2}
+  dialogueBox: {fileID: 0}
+  dialogueText: {fileID: 0}
+  playerInventory: {fileID: 11400000, guid: d135967fc6b2d4520adb53952d62f713, type: 2}

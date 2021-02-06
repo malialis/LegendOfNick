@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private Vector3 change;
 
+    public Inventory playerInventory;
+    public SpriteRenderer receivedItemSprite;
 
     private void Awake()
     {
@@ -46,6 +48,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //is the player in an interaction
+        if(currentState == PlayerState.interact)
+        {
+            return;
+        }
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
@@ -119,6 +126,27 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    public void RaiseItem()
+    {
+        if(playerInventory.currentItem != null)
+        {
+            if (currentState != PlayerState.interact)
+            {
+                animator.SetBool("receiveItem", true);
+                currentState = PlayerState.interact;
+                receivedItemSprite.sprite = playerInventory.currentItem.itemSprite;
+            }
+            else
+            {
+                animator.SetBool("receiveItem", false);
+                currentState = PlayerState.walk;
+                receivedItemSprite.sprite = null;
+                playerInventory.currentItem = null;
+            }
+        }        
+        
+    }
+
     #region Attacks
 
     private IEnumerator AttackCoroutine()
@@ -130,7 +158,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("attacking", false);
         Debug.Log("I have struck something");
         yield return new WaitForSeconds(0.25f);
-        currentState = PlayerState.walk;
+        if(currentState != PlayerState.interact)
+        {
+            currentState = PlayerState.walk;
+        }
+        
     }
 
     private IEnumerator SecondaryAttackCoroutine()
@@ -141,7 +173,11 @@ public class PlayerMovement : MonoBehaviour
         yield return null;
         animator.SetBool("attacking", false);
         yield return new WaitForSeconds(0.25f);
-        currentState = PlayerState.walk;
+        if(currentState != PlayerState.interact)
+        {
+            currentState = PlayerState.walk;
+        }
+        
     }
 
 
