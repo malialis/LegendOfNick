@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum PlayerState
 {
@@ -15,6 +16,8 @@ public enum PlayerState
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
+
+    [Header("Player Atrributes")]    
     public float speed;
     public FloatValue currentHealth;
     public SignalSender playerHealthSignal;
@@ -23,13 +26,28 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidBody;
     private Animator animator;
     private Vector3 change;
+    private float inputX;
+    private float inputY;
+    private ThePlayerInput playerInput;
 
+    [Header("Player Scriptables")]
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
+    public SignalSender playerHit;
 
     private void Awake()
+    {        
+        playerInput = new ThePlayerInput();
+    }
+
+    private void OnEnable()
     {
-        Application.targetFrameRate = 30;
+        playerInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
     }
 
     // Start is called before the first frame update
@@ -54,17 +72,10 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         change = Vector3.zero;
-        change.x = Input.GetAxisRaw("Horizontal");
-        change.y = Input.GetAxisRaw("Vertical");
+        change.x = inputX;        
+        change.y = inputY;
 
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
-        {
-            StartCoroutine(AttackCoroutine());
-        }
-        else if (Input.GetButtonDown("secondAttack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
-        {
-            StartCoroutine(SecondaryAttackCoroutine());
-        }
+      // if(Keyboard.current.spaceKey.wasPressedThisFrame && currentState != PlayerState.attack && currentState != PlayerState.stagger)
 
 
     }
@@ -101,6 +112,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator KnockCoroutine(float knockbackTime)
     {
+        playerHit.Raise();
         if (myRigidBody != null)
         {
             yield return new WaitForSeconds(knockbackTime);
@@ -182,5 +194,30 @@ public class PlayerMovement : MonoBehaviour
 
 
     #endregion
+
+
+    public void Move(InputAction.CallbackContext context)
+    {
+        inputX = context.ReadValue<Vector2>().x;
+        inputY = context.ReadValue<Vector2>().y;
+    }
+
+    public void Attack(InputAction.CallbackContext context)
+    {
+        if (currentState != PlayerState.attack && currentState != PlayerState.stagger)
+        {
+            StartCoroutine(AttackCoroutine());
+        }
+    }
+
+    public void Fire(InputAction.CallbackContext context)
+    {
+        if (currentState != PlayerState.attack && currentState != PlayerState.stagger)
+        {
+            StartCoroutine(SecondaryAttackCoroutine());
+        }
+    }
+
+    
 
 }

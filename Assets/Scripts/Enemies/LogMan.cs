@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class LogMan : Enemy
 {
+    [Header("Logman Target Attributes")]
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
-    public Transform homePosition;
+   // public Transform homePosition;
 
-    private Rigidbody2D myRigidBody;
-    private Animator animator;
+    [Header("Logman components")]
+    public Rigidbody2D myRigidBody;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,7 @@ public class LogMan : Enemy
         target = GameObject.FindWithTag("Player").transform;
         myRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animator.SetBool("WakeUp", true);
 
     }
 
@@ -28,7 +31,7 @@ public class LogMan : Enemy
         CheckDistance();
     }
 
-    private void CheckDistance()
+    public virtual void CheckDistance()
     {
         if(Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
@@ -50,7 +53,7 @@ public class LogMan : Enemy
         }
     }
 
-    private void ChangeState(EnemyState newState)
+    public void ChangeState(EnemyState newState)
     {
         if(currentState != newState)
         {
@@ -58,7 +61,7 @@ public class LogMan : Enemy
         }
     }
 
-    private void ChangeAnimation(Vector2 direction)
+    public void ChangeAnimation(Vector2 direction)
     {
         if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {

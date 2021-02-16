@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class TresureChests : Interactions
 {
+    [Header("Contents")]
     public Item contents;
     public bool isOpen;
+    public BoolValue haveBeenOpen;
+
+    [Header("Signals and Dialogues")]
     public SignalSender raiseItem;
     public GameObject dialogueBox;
     public Text dialogueText;
@@ -25,24 +30,17 @@ public class TresureChests : Interactions
     void Start()
     {
         animator = GetComponent<Animator>();
+        isOpen = haveBeenOpen.RuntimeValue;
+        if (isOpen)
+        {
+            animator.SetBool("isOpened", true);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
-        {
-            if (!isOpen)
-            {
-                OpenChest();
-            }
-            else
-            {
-                //chest is already open
-                ChestAlreadyOpen();
-            }
-        }
-
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -82,6 +80,7 @@ public class TresureChests : Interactions
         animator.SetBool("isOpened", true);
         context.Raise();
         //saveGame.OpenedChests.Add(this.gameObject.name);
+        haveBeenOpen.RuntimeValue = isOpen;
     }
 
     public void ChestAlreadyOpen()
@@ -94,6 +93,24 @@ public class TresureChests : Interactions
             raiseItem.Raise();
                     
     }
+
+    public void InteractWithChest(InputAction.CallbackContext context)
+    {
+        if (playerInRange)
+        {
+            if (!isOpen)
+            {
+                OpenChest();
+            }
+            else
+            {
+                //chest is already open
+                ChestAlreadyOpen();
+            }
+        }
+
+    }
+
 
 
 }

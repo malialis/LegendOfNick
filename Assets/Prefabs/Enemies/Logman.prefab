@@ -198,10 +198,14 @@ MonoBehaviour:
   enemyName: Logman
   baseAttack: 1
   moveSpeed: 2
-  target: {fileID: 0}
-  chaseRadius: 5
+  homePosition: {x: 20, y: -9}
+  deathFX: {fileID: 7621168655020450607, guid: 733cfb9b718934d2fa2e4a7e06811704, type: 3}
+  roomSignal: {fileID: 11400000, guid: b040a8052ca224623a83678d158ac43a, type: 2}
+  target: {fileID: 8223418519928970853, guid: 5369a1ba86e2b4220b4413494bbf07b8, type: 3}
+  chaseRadius: 3
   attackRadius: 1
-  homePosition: {fileID: 0}
+  myRigidBody: {fileID: 5043713895640408266}
+  animator: {fileID: 5043713895640408262}
 --- !u!114 &3621983956678219648
 MonoBehaviour:
   m_ObjectHideFlags: 0

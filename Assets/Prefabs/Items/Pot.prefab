@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2194579214170523155}
   - component: {fileID: 2194579214170523152}
   - component: {fileID: 2194579214170523153}
-  - component: {fileID: 7072591304036702429}
+  - component: {fileID: 355675222}
   m_Layer: 0
   m_Name: Pot
   m_TagString: breakable
@@ -130,7 +130,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7072591304036702429
+--- !u!114 &355675222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2194579214170523158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3de468835d7a4228a3647e6dc66422b, type: 3}
+  m_Script: {fileID: 11500000, guid: 308e903965c0f46c8abc55612b980dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 2194579214170523153}

@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    [Header("Position Variables")]
     public Transform target;
     public float smoothing;
     public Vector2 maxPosition;
     public Vector2 minPosition;
 
+    [Header("Animator")]
+    public Animator animator;
+
+    [Header("Reset Defaults")]
+    public VectorValue defaultMax;
+    public VectorValue defaultMin;
 
     // Start is called before the first frame update
     void Start()
     {
+        maxPosition = defaultMax.initialValue;
+        minPosition = defaultMin.initialValue;
+
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,7 +40,17 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
+    public void BeginKick()
+    {
+        animator.SetBool("kickActivated", true);
+        StartCoroutine(ScreenKickCoroutine());
+    }
 
+    public IEnumerator ScreenKickCoroutine()
+    {
+        yield return null;
+        animator.SetBool("kickActivated", false);
+    }
 
 
 }

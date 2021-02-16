@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class Signs : Interactions
 {
@@ -19,18 +20,7 @@ public class Signs : Interactions
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playerInRange)
-        {
-            if (dialogBox.activeInHierarchy)
-            {
-                dialogBox.SetActive(false);
-            }
-            else
-            {
-                dialogBox.SetActive(true);
-                dialogText.text = dialog;
-            }
-        }
+        
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -42,6 +32,23 @@ public class Signs : Interactions
             playerInRange = false;
             dialogBox.SetActive(false);
         }
+    }
+
+    public void ReadSign(InputAction.CallbackContext context)
+    {
+        if (playerInRange)
+        {
+            if (dialogBox.activeInHierarchy)
+            {
+                dialogBox.SetActive(false);
+            }
+            else
+            {
+                dialogBox.SetActive(true);
+                dialogText.text = dialog;
+            }
+        }
+        
     }
 
 }

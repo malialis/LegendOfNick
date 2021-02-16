@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Breakable : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -12,12 +12,7 @@ public class Breakable : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+   
     public void Smash()
     {
         animator.SetBool("Smash", true);

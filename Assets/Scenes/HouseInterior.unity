@@ -1361,6 +1361,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1376,6 +1377,25 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c3f65e2f4db542b38e50eb9af4c897a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1742583144}
+  smoothing: 0.5
+  maxPosition: {x: 9, y: 5}
+  minPosition: {x: 9, y: 5}
+  animator: {fileID: 0}
+  defaultMax: {fileID: 11400000, guid: 07f48e1c3f2e64d6c9f0eb0a6954da8a, type: 2}
+  defaultMin: {fileID: 11400000, guid: 0a36a40cdd4b54ae98f5170ad35642f5, type: 2}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -4644,6 +4664,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!4 &1742583144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8223418521494109304, guid: 5369a1ba86e2b4220b4413494bbf07b8, type: 3}
+  m_PrefabInstance: {fileID: 8223418521534695263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2054242360326246062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4691,6 +4716,30 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 2656816955189144128, guid: 46ba84694f97f4711b8e28a67faf20b3, type: 3}
+    - target: {fileID: 745414525286364443, guid: 75f56765f2b304fc18865ec90a15d96b, type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: 0071db1faf54d4305941a8e22d6e92f1, type: 2}
+    - target: {fileID: 745414525286364443, guid: 75f56765f2b304fc18865ec90a15d96b, type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e9220b53e2cc4fd9b06a6fceb5f1b5f, type: 2}
+    - target: {fileID: 745414525286364443, guid: 75f56765f2b304fc18865ec90a15d96b, type: 3}
+      propertyPath: cameraNewMax.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 745414525286364443, guid: 75f56765f2b304fc18865ec90a15d96b, type: 3}
+      propertyPath: cameraNewMin.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 745414525286364443, guid: 75f56765f2b304fc18865ec90a15d96b, type: 3}
+      propertyPath: cameraNewMax.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 745414525286364443, guid: 75f56765f2b304fc18865ec90a15d96b, type: 3}
+      propertyPath: cameraNewMin.y
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 3171379965207856606, guid: 75f56765f2b304fc18865ec90a15d96b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.93

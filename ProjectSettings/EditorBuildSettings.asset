@@ -14,4 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OverWorld.unity
     guid: 4db1c0b902a6145c394e90b3d36a3c3a
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: 6d059c9633b4847e6ac797b4d66f777c
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 2571af36ff3c846e5b70dcb34557b0be, type: 2}

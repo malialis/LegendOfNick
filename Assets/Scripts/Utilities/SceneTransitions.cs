@@ -6,14 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitions : MonoBehaviour
 {
+    [Header("New Scene Variables")]
     public string sceneToLoad;
     public Vector2 playerPosition;
     public VectorValue playerStored;
+    public VectorValue cameraMin;
+    public VectorValue cameraMax;
+    public Vector2 cameraNewMax;
+    public Vector2 cameraNewMin;
 
     public string placeName;
     public GameObject text;
     public Text placeText;
 
+    [Header("Transitions Variables")]
     public GameObject fadeInPanel;
     public GameObject fadeOutPanel;
     public float fadeWaitTime;
@@ -36,9 +42,7 @@ public class SceneTransitions : MonoBehaviour
 
             StartCoroutine(RoomChangeWalkDelay(other));
             StartCoroutine(PlaceNameCoroutine());
-            StartCoroutine(FadeCoroutine());
-
-            //SceneManager.LoadScene(sceneToLoad);                       
+            StartCoroutine(FadeCoroutine());                  
         }
     }
 
@@ -67,12 +71,19 @@ public class SceneTransitions : MonoBehaviour
             Instantiate(fadeOutPanel, Vector3.zero, Quaternion.identity);
         }
         yield return new WaitForSeconds(fadeWaitTime);
+        ResetCameraBounds();
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
         while (!asyncOperation.isDone)
         {
             yield return null;
         }
         
+    }
+
+    public void ResetCameraBounds()
+    {
+        cameraMax.initialValue = cameraNewMax;
+        cameraMin.initialValue = cameraNewMin;
     }
 
 }
