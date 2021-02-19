@@ -898,9 +898,9 @@ MonoBehaviour:
     m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Doors, Assembly-CSharp
-        m_MethodName: InteractWithDoors
+      - m_Target: {fileID: 8223418521494109301}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Submit
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

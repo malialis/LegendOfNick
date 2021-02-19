@@ -31,6 +31,7 @@ public class DungeonEnemyRoomConfig : DungeonRoomConfig
         for (int i = 0; i < doors.Length; i++)
         {
             doors[i].CloseDoor();
+            Debug.Log("Doors Are close now yo, good luck");
         }
     }
 
@@ -52,9 +53,9 @@ public class DungeonEnemyRoomConfig : DungeonRoomConfig
             {
                 ChangeActivation(enemies[i], true);
             }
-            for (int j = 0; j < breakables.Length; j++)
+            for (int i = 0; i < breakables.Length; i++)
             {
-                ChangeActivation(breakables[j], true);
+                ChangeActivation(breakables[i], true);
             }
             virtualCamera.SetActive(true);
         }
@@ -71,9 +72,9 @@ public class DungeonEnemyRoomConfig : DungeonRoomConfig
             {
                 ChangeActivation(enemies[i], false);
             }
-            for (int j = 0; j < breakables.Length; j++)
+            for (int i = 0; i < breakables.Length; i++)
             {
-                ChangeActivation(breakables[j], false);
+                ChangeActivation(breakables[i], false);
             }
             virtualCamera.SetActive(false);
         }

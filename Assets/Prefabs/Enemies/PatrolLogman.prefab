@@ -125,7 +125,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 1150fe563904d49fca13a8c127c30538, type: 2}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &1618715142067726029
@@ -213,11 +213,12 @@ MonoBehaviour:
   enemyName: Pat the Patroller
   baseAttack: 1
   moveSpeed: 2
+  homePosition: {x: 0, y: 0}
   deathFX: {fileID: 7621168655020450607, guid: 733cfb9b718934d2fa2e4a7e06811704, type: 3}
+  roomSignal: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 3
   attackRadius: 1
-  homePosition: {fileID: 0}
   myRigidBody: {fileID: 0}
   animator: {fileID: 0}
   path:

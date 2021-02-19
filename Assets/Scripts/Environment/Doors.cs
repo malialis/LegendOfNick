@@ -26,10 +26,11 @@ public class Doors : Interactions
     public BoxCollider2D physicsCollider;
 
 
+
     // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        GameEvents.current.OnSubmit += OnSubmit;
     }
 
     public void OpenDoor()
@@ -46,7 +47,8 @@ public class Doors : Interactions
 
     }
 
-    public void InteractWithDoors(InputAction.CallbackContext context)
+
+    public override void DoOnSubmit()
     {
         if (playerInRange && thisDoorType == DoorType.key)
         {
@@ -61,5 +63,7 @@ public class Doors : Interactions
 
         }
     }
+        
+    
 
 }

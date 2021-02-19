@@ -34,6 +34,7 @@ public class TurretLogman : LogMan
                     Vector3 tempVector = target.transform.position - transform.position;
                     GameObject current = Instantiate(projectile, transform.position, Quaternion.identity);
                     current.GetComponent<Projectiles>().LaunchProjectile(tempVector);
+                    Debug.Log("Projectile Fired");
                     canFire = false;
                     ChangeState(EnemyState.walk);
                     animator.SetBool("WakeUp", true);

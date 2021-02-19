@@ -125,7 +125,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 1150fe563904d49fca13a8c127c30538, type: 2}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &1739525774043406299
@@ -213,11 +213,11 @@ MonoBehaviour:
   enemyName: Terry The Turret
   baseAttack: 1
   moveSpeed: 2
-  homePosition: {x: 0, y: 0}
+  homePosition: {x: 15, y: -10}
   deathFX: {fileID: 7621168655020450607, guid: 733cfb9b718934d2fa2e4a7e06811704, type: 3}
   roomSignal: {fileID: 11400000, guid: b040a8052ca224623a83678d158ac43a, type: 2}
   target: {fileID: 8223418519928970853, guid: 5369a1ba86e2b4220b4413494bbf07b8, type: 3}
-  chaseRadius: 4
+  chaseRadius: 6
   attackRadius: 3
   myRigidBody: {fileID: 1739525774043406296}
   animator: {fileID: 1739525774043406292}

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,15 +12,18 @@ public class Interactions : MonoBehaviour
 
     public bool playerInRange;
 
-
+    private void Start()
+    {
+        GameEvents.current.OnSubmit += OnSubmit;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             context.Raise();
-            //Debug.Log("Player in Range yo");
             playerInRange = true;
+            Debug.Log("Player has entered range yo");
 
         }
     }
@@ -32,6 +36,21 @@ public class Interactions : MonoBehaviour
             playerInRange = false;
             //dialogBox.SetActive(false);
         }
+    }
+
+    public void OnSubmit()
+    {
+        if (this.playerInRange) DoOnSubmit(); //Interact with it (open door, etc)
+    }
+
+    public virtual void DoOnSubmit()
+    {
+
+    }
+
+    public void DoSubmit()
+    {
+         GameEvents.current.OnSubmit += OnSubmit;
     }
 
 }

@@ -36,12 +36,18 @@ public class Projectiles : MonoBehaviour
     public void LaunchProjectile(Vector2 initialVelocity)
     {
         myRigidBody.velocity = initialVelocity * moveSpeed;
+        Debug.Log("FIRE!!!!");
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        GameObject effect = Instantiate(impactFX, transform.position, Quaternion.identity);
-        Destroy(effect, impactDestroyDelay);
+        if(other.CompareTag("Player") && !other.isTrigger)
+        {
+            GameObject effect = Instantiate(impactFX, transform.position, Quaternion.identity);
+            Destroy(effect, impactDestroyDelay);
+            Debug.Log("SMOKE!!!!");
+        }
+        
         Destroy(this.gameObject);
     }
 

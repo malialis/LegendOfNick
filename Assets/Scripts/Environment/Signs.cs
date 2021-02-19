@@ -10,19 +10,7 @@ public class Signs : Interactions
     public Text dialogText;
     public string dialog;
     
-
-    // Start is called before the first frame update
-    void Start()
-    {
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -34,12 +22,13 @@ public class Signs : Interactions
         }
     }
 
-    public void ReadSign(InputAction.CallbackContext context)
+    public override void DoOnSubmit()
     {
         if (playerInRange)
         {
             if (dialogBox.activeInHierarchy)
             {
+                Debug.Log("I am reading the Sign");
                 dialogBox.SetActive(false);
             }
             else

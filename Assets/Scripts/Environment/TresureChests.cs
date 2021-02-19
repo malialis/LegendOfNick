@@ -18,14 +18,7 @@ public class TresureChests : Interactions
     private Animator animator;
     public Inventory playerInventory;
 
-    //[SerializeField]
-    //private SaveGameObject saveGame;
-
-    private void Awake()
-    {
-        //if (saveGame.OpenedChests.Contains(this.gameObject.name)) OpenChest();
-    }
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +28,7 @@ public class TresureChests : Interactions
         {
             animator.SetBool("isOpened", true);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameEvents.current.OnSubmit += OnSubmit;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -96,8 +84,29 @@ public class TresureChests : Interactions
 
     public void InteractWithChest(InputAction.CallbackContext context)
     {
+        Debug.Log("I am interacting");
         if (playerInRange)
         {
+            Debug.Log("I am in Range");
+            if (!isOpen)
+            {
+                Debug.Log("I am trying to open Chest");
+                OpenChest();
+            }
+            else
+            {
+                Debug.Log("chest is already open");
+                ChestAlreadyOpen();
+            }
+        }
+
+    }
+
+    public override void DoOnSubmit()
+    {
+        if (playerInRange)
+        {
+            Debug.Log("I am in Range to Do");
             if (!isOpen)
             {
                 OpenChest();

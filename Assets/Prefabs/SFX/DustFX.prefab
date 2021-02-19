@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 9137346650815299499}
   - component: {fileID: 7619737994266069304}
   - component: {fileID: 2344009623057282505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DustFX
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

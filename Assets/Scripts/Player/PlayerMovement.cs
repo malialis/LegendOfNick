@@ -192,9 +192,9 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-
     #endregion
 
+    #region new Input System
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -218,6 +218,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    
+    public void Submit(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEvents.current.DoSubmit();
+            //Debug.Log("I am interacting");
+        }
+        
+    }
+
+    #endregion
+
 
 }
