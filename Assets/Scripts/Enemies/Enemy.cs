@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
     [Header("Enemy Prefabs")]
     public GameObject deathFX;
     private float deathDestryDelay = 1.5f;
+    public LootTable thisLoot;
 
     [Header("DeathSignals")]
     public SignalSender roomSignal;
@@ -64,7 +65,11 @@ public class Enemy : MonoBehaviour
         if(health <= 0)
         {
             DeathEffect();
-            roomSignal.Raise();
+            MakeLoot();
+            if(roomSignal != null)
+            {
+                roomSignal.Raise();
+            }            
             this.gameObject.SetActive(false);
         }
     }
@@ -75,6 +80,18 @@ public class Enemy : MonoBehaviour
         {
             GameObject effect = Instantiate(deathFX, transform.position, Quaternion.identity);
             Destroy(effect, deathDestryDelay);
+        }
+    }
+
+    private void MakeLoot()
+    {
+        if(thisLoot != null)
+        {
+            PowerUP current = thisLoot.LootPowerUp();
+            if(current != null)
+            {
+                Instantiate(current.gameObject, transform.position, Quaternion.identity);
+            }
         }
     }
 

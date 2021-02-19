@@ -41,12 +41,10 @@ public class Projectiles : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && !other.isTrigger)
-        {
-            GameObject effect = Instantiate(impactFX, transform.position, Quaternion.identity);
-            Destroy(effect, impactDestroyDelay);
-            Debug.Log("SMOKE!!!!");
-        }
+        GameObject effect = Instantiate(impactFX, transform.position, Quaternion.identity);
+        Destroy(effect, impactDestroyDelay);
+        Debug.Log("SMOKE!!!!");
+        
         
         Destroy(this.gameObject);
     }

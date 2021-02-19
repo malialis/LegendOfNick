@@ -2862,6 +2862,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 41401127}
+    - target: {fileID: 3041534564355899643, guid: ab413065a612140cd946c84dc1b38bf0, type: 3}
+      propertyPath: thisLoot
+      value: 
+      objectReference: {fileID: 11400000, guid: 19bd61017691b4bb18325ad84d3cb88a, type: 2}
     - target: {fileID: 3041534565041408910, guid: ab413065a612140cd946c84dc1b38bf0, type: 3}
       propertyPath: m_Name
       value: Room01

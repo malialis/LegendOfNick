@@ -213,11 +213,13 @@ MonoBehaviour:
   enemyName: Barry the Area Patroller
   baseAttack: 1
   moveSpeed: 1
+  homePosition: {x: 0, y: 0}
   deathFX: {fileID: 7621168655020450607, guid: 733cfb9b718934d2fa2e4a7e06811704, type: 3}
+  thisLoot: {fileID: 11400000, guid: 19bd61017691b4bb18325ad84d3cb88a, type: 2}
+  roomSignal: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 3
   attackRadius: 1
-  homePosition: {fileID: 0}
   myRigidBody: {fileID: 2658135531502523128}
   animator: {fileID: 2658135531502523124}
   boundary: {fileID: 0}
