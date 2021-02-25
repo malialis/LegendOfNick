@@ -34,6 +34,23 @@ public class PlayerMovement : MonoBehaviour
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
     public SignalSender playerHit;
+    public SignalSender reduceMagic;
+    public float magicCost;
+    public MagicManager magicManager;
+
+    [Header("Projectile things")]
+    public Item bow;
+    public GameObject projectile;
+    public Transform spawnPoint;
+
+    [Header("IFrame Stuff")]
+    public Color flashColor;
+    public Color regularColor;
+    public float flashDuration;
+    public int numberOfFlashes;
+    public Collider2D triggerCollider;
+    public SpriteRenderer mySprite;
+
 
     private void Awake()
     {        
@@ -100,6 +117,8 @@ public class PlayerMovement : MonoBehaviour
         if (change != Vector3.zero)
         {
             MoveCharacter();
+            change.x = Mathf.Round(change.x);
+            change.y = Mathf.Round(change.y);
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
@@ -115,6 +134,7 @@ public class PlayerMovement : MonoBehaviour
         playerHit.Raise();
         if (myRigidBody != null)
         {
+            StartCoroutine(FlashCoroutine());
             yield return new WaitForSeconds(knockbackTime);
             myRigidBody.velocity = Vector2.zero;
             currentState = PlayerState.idle;
@@ -159,6 +179,22 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    private IEnumerator FlashCoroutine()
+    {
+        int temp = 0;
+        triggerCollider.enabled = false;
+        while(temp < numberOfFlashes)
+        {
+            mySprite.color = flashColor;
+            yield return new WaitForSeconds(flashDuration);
+            mySprite.color = regularColor;
+            yield return new WaitForSeconds(flashDuration);            
+            temp++;
+
+        }
+        triggerCollider.enabled = true;
+    }
+
     #region Attacks
 
     private IEnumerator AttackCoroutine()
@@ -177,19 +213,40 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-    private IEnumerator SecondaryAttackCoroutine()
+    private IEnumerator SecondWeaponAttackCoroutine()
     {
-        animator.SetBool("attacking", true);
+        //animator.SetBool("SecondWeapon", true);
         currentState = PlayerState.attack;
-
         yield return null;
-        animator.SetBool("attacking", false);
+        MakeArrow();
+        //animator.SetBool("SecondWeapon", false);
         yield return new WaitForSeconds(0.25f);
         if(currentState != PlayerState.interact)
         {
             currentState = PlayerState.walk;
         }
         
+    }
+
+    private void MakeArrow()
+    {
+        if(playerInventory.currentMagic > 0)
+        {
+            Vector2 temp = new Vector2(animator.GetFloat("moveX"), animator.GetFloat("moveY")); // get the current direction of player standin
+            ArrowProjectile arrow = Instantiate(projectile, spawnPoint.position, Quaternion.identity).GetComponent<ArrowProjectile>();
+            arrow.Setup(temp, ChooseArrowDirection());
+            playerInventory.ReduceMagic(arrow.magicCost);
+           // magicCost = projectile.GetComponent<PlayerProjectiles>().magicCost;
+            // magicManager.DecreaseMagic(magicCost);
+            reduceMagic.Raise();
+        }        
+        
+    }
+
+    private Vector3 ChooseArrowDirection()
+    {
+        float temp = Mathf.Atan2(animator.GetFloat("moveY"), animator.GetFloat("moveX")) * Mathf.Rad2Deg;
+        return new Vector3(0, 0, temp);
     }
 
     #endregion
@@ -210,11 +267,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void Fire(InputAction.CallbackContext context)
+    public void Shoot(InputAction.CallbackContext context)
     {
         if (currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
-            StartCoroutine(SecondaryAttackCoroutine());
+            if (playerInventory.CheckForItem(bow))
+            {
+                StartCoroutine(SecondWeaponAttackCoroutine());
+            }            
         }
     }
 
@@ -226,6 +286,35 @@ public class PlayerMovement : MonoBehaviour
             //Debug.Log("I am interacting");
         }
         
+    }
+
+    public void ReadAndTalk(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEvents.current.DoRead();
+            //Debug.Log("I am interacting");
+        }
+
+    }
+
+    public void BeginTalking(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            GameEvents.current.DoTalk();
+            Debug.Log("I am interacting by Talking");
+        }
+
+    }
+
+
+    public void Dash(InputAction.CallbackContext context)
+    {
+        if (currentState != PlayerState.attack && currentState != PlayerState.stagger)
+        {
+            StartCoroutine(SecondWeaponAttackCoroutine());
+        }
     }
 
     #endregion

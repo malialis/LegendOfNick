@@ -44,8 +44,7 @@ public class Projectiles : MonoBehaviour
         GameObject effect = Instantiate(impactFX, transform.position, Quaternion.identity);
         Destroy(effect, impactDestroyDelay);
         Debug.Log("SMOKE!!!!");
-        
-        
+                
         Destroy(this.gameObject);
     }
 

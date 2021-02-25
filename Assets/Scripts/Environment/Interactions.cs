@@ -15,6 +15,8 @@ public class Interactions : MonoBehaviour
     private void Start()
     {
         GameEvents.current.OnSubmit += OnSubmit;
+        GameEvents.current.OnRead += OnRead;
+        GameEvents.current.OnTalk += OnTalk;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -52,5 +54,44 @@ public class Interactions : MonoBehaviour
     {
          GameEvents.current.OnSubmit += OnSubmit;
     }
+
+    public void OnRead()
+    {
+        if (this.playerInRange) DoOnRead(); //Interact with it (Read)
+    }
+
+    public virtual void DoOnRead()
+    {
+
+    }
+
+    public void DoRead()
+    {
+        GameEvents.current.OnRead += OnRead;
+    }
+
+    public void OnTalk()
+    {
+        if (this.playerInRange) DoOnTalk(); //Interact with it (Talk)
+    }
+
+    public virtual void DoOnTalk()
+    {
+
+    }
+
+    public void DoTalk()
+    {
+        GameEvents.current.OnTalk += OnTalk;
+    }
+
+
+    private void OnDestroy()
+    {
+        GameEvents.current.OnSubmit -= OnSubmit;
+        GameEvents.current.OnRead -= OnRead;
+        GameEvents.current.OnTalk -= OnTalk;
+    }
+
 
 }

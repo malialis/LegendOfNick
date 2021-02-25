@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Fire",
+                    "name": "Shoot",
                     "type": "Button",
                     "id": "b1cece98-6fb1-4027-82b8-cc76aee3748c",
                     "expectedControlType": "Button",
@@ -41,6 +41,38 @@
                     "name": "Attack",
                     "type": "Button",
                     "id": "718ae5a9-6fe7-4b55-b099-69722e3e5836",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Attack02",
+                    "type": "Button",
+                    "id": "97f1db5e-1eb7-42fb-8222-c5bc827077a9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Dash",
+                    "type": "Button",
+                    "id": "0b872b5c-ec36-4970-bea7-e4c46451f23d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "4f58de1f-06fb-45b3-8e7a-088c74f2f2e4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Button",
+                    "id": "afaec2bf-f6ae-4727-9b03-161559b33a25",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -219,7 +251,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -230,7 +262,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -241,7 +273,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Touch",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -252,7 +284,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -263,7 +295,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "XR",
-                    "action": "Fire",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -280,12 +312,111 @@
                 },
                 {
                     "name": "",
+                    "id": "f5eb2bae-e39c-4eaf-8be7-c0d0f43c530b",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "30fe29ac-c77f-42c6-a2f7-cc223558b82b",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6aa0ed61-5086-4875-89f4-e43bd3230bff",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9f4a0ba3-00c9-492e-865c-cdd0169ea87f",
+                    "path": "<Keyboard>/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Attack02",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dcc385a6-c486-4f16-b730-1452065adbd4",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack02",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6481672f-d195-44d8-b26b-c6ce995d6bdd",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0e5283f5-659d-452b-af5d-6568ec718bc0",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3a43ab7-79f0-41de-9809-5196f8a1067f",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05aacdad-5f2b-4180-a7c2-2bb75117704f",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d7ce043d-a420-436c-a8b8-094b4071f235",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Inventory",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

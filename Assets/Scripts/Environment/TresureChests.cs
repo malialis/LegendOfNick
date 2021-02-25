@@ -82,39 +82,23 @@ public class TresureChests : Interactions
                     
     }
 
-    public void InteractWithChest(InputAction.CallbackContext context)
-    {
-        Debug.Log("I am interacting");
-        if (playerInRange)
-        {
-            Debug.Log("I am in Range");
-            if (!isOpen)
-            {
-                Debug.Log("I am trying to open Chest");
-                OpenChest();
-            }
-            else
-            {
-                Debug.Log("chest is already open");
-                ChestAlreadyOpen();
-            }
-        }
-
-    }
-
+    
     public override void DoOnSubmit()
     {
+        Debug.Log("I am interacting");
         if (playerInRange)
         {
             Debug.Log("I am in Range to Do");
             if (!isOpen)
             {
                 OpenChest();
+                Debug.Log("I am trying to open Chest");
             }
             else
             {
                 //chest is already open
                 ChestAlreadyOpen();
+                Debug.Log("chest is already open");
             }
         }
 

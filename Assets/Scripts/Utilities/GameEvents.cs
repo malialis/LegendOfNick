@@ -13,9 +13,18 @@ public class GameEvents : MonoBehaviour
         current = this;
     } 
 
-    public event Action OnSubmit; //This is used for all listening objects
+    public event Action OnSubmit; //This is used for all listening objects of Chests
 
     public void DoSubmit() => this.OnSubmit?.Invoke();
 
+    public event Action OnRead; //This is used for all listening objects of Signs
+
+    public void DoRead() => this.OnRead?.Invoke();
     
+    public event Action OnTalk; //This is used for all listening objects of Peoples
+
+    public void DoTalk() => this.OnTalk?.Invoke();
+
+
+
 }

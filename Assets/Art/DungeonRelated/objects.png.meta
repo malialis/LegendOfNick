@@ -307,16 +307,16 @@ TextureImporter:
     second: objects_100
   - first:
       213: -3555468057966329373
-    second: objects_101
+    second: HeartC01
   - first:
       213: 4571676322455285884
-    second: objects_102
+    second: HeartC02
   - first:
       213: 5513264443485517607
-    second: objects_103
+    second: HeartC03
   - first:
       213: 1529650774630179173
-    second: objects_104
+    second: HeartC04
   - first:
       213: 3260465681249809347
     second: objects_105
@@ -478,6 +478,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -2321,7 +2323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_101
+      name: HeartC01
       rect:
         serializedVersion: 2
         x: 66
@@ -2342,7 +2344,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_102
+      name: HeartC02
       rect:
         serializedVersion: 2
         x: 83
@@ -2363,7 +2365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_103
+      name: HeartC03
       rect:
         serializedVersion: 2
         x: 100
@@ -2384,7 +2386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_104
+      name: HeartC04
       rect:
         serializedVersion: 2
         x: 115

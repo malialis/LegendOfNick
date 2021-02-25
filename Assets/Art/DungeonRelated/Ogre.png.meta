@@ -1,0 +1,960 @@
+fileFormatVersion: 2
+guid: b376f89ec1a8241fd9dcc9641ac5d085
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2063777203212614812
+    second: Ogre_Down01
+  - first:
+      213: -2430310237430961680
+    second: Ogre_Down2
+  - first:
+      213: -4131807888556131283
+    second: Ogre_down3
+  - first:
+      213: -7309169594432983604
+    second: Ogre_down4
+  - first:
+      213: -8730674230366055748
+    second: Ogre_attackdown1
+  - first:
+      213: -2954814174934864707
+    second: Ogre_attackdown2
+  - first:
+      213: -754777123836521649
+    second: Ogre_attackdown3
+  - first:
+      213: -2831881569429371564
+    second: Ogre_attackdown4
+  - first:
+      213: -9052904014459046893
+    second: Ogre_8
+  - first:
+      213: -726634292765489925
+    second: Ogre_right1
+  - first:
+      213: 251987133614055564
+    second: Ogre_right2
+  - first:
+      213: 7209628147367737023
+    second: Ogre_right3
+  - first:
+      213: 3966056598969477522
+    second: Ogre_right4
+  - first:
+      213: 6363447515598099143
+    second: Ogre_attackup1
+  - first:
+      213: -6285972059019997060
+    second: Ogre_attackup2
+  - first:
+      213: 3382246341798674175
+    second: Ogre_attackup3
+  - first:
+      213: 6595678811532957237
+    second: Ogre_attackup4
+  - first:
+      213: 8932430731312830890
+    second: Ogre_17
+  - first:
+      213: -1066573952649008638
+    second: Ogre_up1
+  - first:
+      213: 7190339226417371264
+    second: Ogre_up2
+  - first:
+      213: -1644947539467524027
+    second: Ogre_up3
+  - first:
+      213: 687425833008528411
+    second: Ogre_up4
+  - first:
+      213: -1734032226162642314
+    second: Ogre_attackright1
+  - first:
+      213: -2456020259341744386
+    second: Ogre_attackright2
+  - first:
+      213: 5745301174396111285
+    second: Ogre_attackright3
+  - first:
+      213: 5505533137490629192
+    second: Ogre_attackright4
+  - first:
+      213: -2659691687596638182
+    second: Ogre_26
+  - first:
+      213: 2456482443685657501
+    second: Ogre_left1
+  - first:
+      213: 7736058273749550567
+    second: Ogre_left2
+  - first:
+      213: 8088297407531052250
+    second: Ogre_left3
+  - first:
+      213: 5716500116767937491
+    second: Ogre_left4
+  - first:
+      213: -135888892477809818
+    second: Ogre_attackleft1
+  - first:
+      213: 7756867850845855559
+    second: Ogre_attackleft2
+  - first:
+      213: 6922684978030928416
+    second: Ogre_attackleft3
+  - first:
+      213: 7645116134730174544
+    second: Ogre_attackleft4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ogre_Down01
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 100
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c79059e6204ac10800000000000000
+      internalID: 2063777203212614812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_Down2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 100
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9aee327bdc54ed0800000000000000
+      internalID: -2430310237430961680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_down3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 100
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c747add9ed8a6c0800000000000000
+      internalID: -4131807888556131283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_down4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 100
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd6cb0cafc909a90800000000000000
+      internalID: -7309169594432983604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackdown1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 101
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2df596b0a66d680800000000000000
+      internalID: -8730674230366055748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackdown2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 97
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5265932, y: 0.2219988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbce7b5c9246ef6d0800000000000000
+      internalID: -2954814174934864707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackdown3
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 97
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5283661, y: 0.2171809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f431221743e7685f0800000000000000
+      internalID: -754777123836521649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackdown4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 96
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.26593557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455cf2077b223b8d0800000000000000
+      internalID: -2831881569429371564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 100
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314f57063cf9d5280800000000000000
+      internalID: -9052904014459046893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_right1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 68
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4881ae5f97ae5f0800000000000000
+      internalID: -726634292765489925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_right2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 68
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80e80386fc3f7300800000000000000
+      internalID: 251987133614055564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_right3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6f28e0a9ebd0460800000000000000
+      internalID: 7209628147367737023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_right4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 68
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2996ba4b6734a0730800000000000000
+      internalID: 3966056598969477522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackup1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 69
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2111aecc18f4850800000000000000
+      internalID: 6363447515598099143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackup2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 69
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70151287bdb3c8a0800000000000000
+      internalID: -6285972059019997060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackup3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 68
+        width: 14
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe36c1c02720fe20800000000000000
+      internalID: 3382246341798674175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackup4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 68
+        width: 14
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5361ef50fee888b50800000000000000
+      internalID: 6595678811532957237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 67
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa91fa09c6e56fb70800000000000000
+      internalID: 8932430731312830890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_up1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 36
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20aeba914a4c231f0800000000000000
+      internalID: -1066573952649008638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_up2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 36
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0881a2d2e6739c360800000000000000
+      internalID: 7190339226417371264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_up3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 36
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548a2eb9de8fb29e0800000000000000
+      internalID: -1644947539467524027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_up4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 36
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c76e9272a3a8900800000000000000
+      internalID: 687425833008528411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackright1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 35
+        width: 18
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672fe7aa0ea7fe7e0800000000000000
+      internalID: -1734032226162642314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackright2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 36
+        width: 23
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6c5c036967aedd0800000000000000
+      internalID: -2456020259341744386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackright3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 36
+        width: 18
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9c38b6af86bbf40800000000000000
+      internalID: 5745301174396111285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackright4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 36
+        width: 18
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842554f0835976c40800000000000000
+      internalID: 5505533137490629192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 37
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a104eb47080e61bd0800000000000000
+      internalID: -2659691687596638182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_left1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bfddc74cd271220800000000000000
+      internalID: 2456482443685657501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_left2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 4
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5409833000c5b60800000000000000
+      internalID: 7736058273749550567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_left3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 4
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adce99573a76f3070800000000000000
+      internalID: 8088297407531052250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_left4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4
+        width: 13
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d39e62a196155f40800000000000000
+      internalID: 5716500116767937491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackleft1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b50f2b5c93d1ef0800000000000000
+      internalID: -135888892477809818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackleft2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 4
+        width: 22
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f9053763ee5ab60800000000000000
+      internalID: 7756867850845855559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackleft3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 4
+        width: 21
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022677f3f41521060800000000000000
+      internalID: 6922684978030928416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ogre_attackleft4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 4
+        width: 21
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05013357e98e81a60800000000000000
+      internalID: 7645116134730174544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

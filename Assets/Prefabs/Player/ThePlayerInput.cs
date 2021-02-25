@@ -35,7 +35,7 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Fire"",
+                    ""name"": ""Shoot"",
                     ""type"": ""Button"",
                     ""id"": ""b1cece98-6fb1-4027-82b8-cc76aee3748c"",
                     ""expectedControlType"": ""Button"",
@@ -54,6 +54,38 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                     ""name"": ""Attack"",
                     ""type"": ""Button"",
                     ""id"": ""718ae5a9-6fe7-4b55-b099-69722e3e5836"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Attack02"",
+                    ""type"": ""Button"",
+                    ""id"": ""97f1db5e-1eb7-42fb-8222-c5bc827077a9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""0b872b5c-ec36-4970-bea7-e4c46451f23d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""4f58de1f-06fb-45b3-8e7a-088c74f2f2e4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Inventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""afaec2bf-f6ae-4727-9b03-161559b33a25"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -232,7 +264,7 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -243,7 +275,7 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -254,7 +286,7 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Touch"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -265,7 +297,7 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -276,7 +308,7 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""XR"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -293,12 +325,111 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""f5eb2bae-e39c-4eaf-8be7-c0d0f43c530b"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""30fe29ac-c77f-42c6-a2f7-cc223558b82b"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6aa0ed61-5086-4875-89f4-e43bd3230bff"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9f4a0ba3-00c9-492e-865c-cdd0169ea87f"",
+                    ""path"": ""<Keyboard>/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Attack02"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dcc385a6-c486-4f16-b730-1452065adbd4"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack02"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6481672f-d195-44d8-b26b-c6ce995d6bdd"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0e5283f5-659d-452b-af5d-6568ec718bc0"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a3a43ab7-79f0-41de-9809-5196f8a1067f"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""05aacdad-5f2b-4180-a7c2-2bb75117704f"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Inventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d7ce043d-a420-436c-a8b8-094b4071f235"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Inventory"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -878,9 +1009,13 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
-        m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
+        m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
+        m_Player_Attack02 = m_Player.FindAction("Attack02", throwIfNotFound: true);
+        m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
+        m_Player_Inventory = m_Player.FindAction("Inventory", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -944,18 +1079,26 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Look;
-    private readonly InputAction m_Player_Fire;
+    private readonly InputAction m_Player_Shoot;
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Attack;
+    private readonly InputAction m_Player_Attack02;
+    private readonly InputAction m_Player_Dash;
+    private readonly InputAction m_Player_Pause;
+    private readonly InputAction m_Player_Inventory;
     public struct PlayerActions
     {
         private @ThePlayerInput m_Wrapper;
         public PlayerActions(@ThePlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Look => m_Wrapper.m_Player_Look;
-        public InputAction @Fire => m_Wrapper.m_Player_Fire;
+        public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @Attack => m_Wrapper.m_Player_Attack;
+        public InputAction @Attack02 => m_Wrapper.m_Player_Attack02;
+        public InputAction @Dash => m_Wrapper.m_Player_Dash;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
+        public InputAction @Inventory => m_Wrapper.m_Player_Inventory;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -971,15 +1114,27 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                 @Look.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                 @Look.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                 @Look.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                @Fire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Fire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Fire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
+                @Shoot.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                 @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Attack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
                 @Attack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
                 @Attack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
+                @Attack02.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack02;
+                @Attack02.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack02;
+                @Attack02.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack02;
+                @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @Pause.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Inventory.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInventory;
+                @Inventory.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInventory;
+                @Inventory.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInventory;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -990,15 +1145,27 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
                 @Look.started += instance.OnLook;
                 @Look.performed += instance.OnLook;
                 @Look.canceled += instance.OnLook;
-                @Fire.started += instance.OnFire;
-                @Fire.performed += instance.OnFire;
-                @Fire.canceled += instance.OnFire;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
+                @Attack02.started += instance.OnAttack02;
+                @Attack02.performed += instance.OnAttack02;
+                @Attack02.canceled += instance.OnAttack02;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
+                @Inventory.started += instance.OnInventory;
+                @Inventory.performed += instance.OnInventory;
+                @Inventory.canceled += instance.OnInventory;
             }
         }
     }
@@ -1157,9 +1324,13 @@ public class @ThePlayerInput : IInputActionCollection, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
-        void OnFire(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+        void OnAttack02(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+        void OnInventory(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

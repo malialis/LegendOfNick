@@ -40,6 +40,8 @@ public class Enemy : MonoBehaviour
     public void OnEnable()
     {
         transform.position = homePosition;
+        health = maxHealth.initialValue;
+        currentState = EnemyState.idle;
     }
 
     public void Knock(Rigidbody2D myRigidbody, float knockbackTime, float damage)

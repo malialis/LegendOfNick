@@ -9,8 +9,14 @@ public class Signs : Interactions
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
-    
-        
+
+
+    private void Start()
+    {
+        //GameEvents.current.OnSubmit += OnSubmit;
+        GameEvents.current.OnRead += OnRead;
+    }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -22,7 +28,7 @@ public class Signs : Interactions
         }
     }
 
-    public override void DoOnSubmit()
+    public override void DoOnRead()
     {
         if (playerInRange)
         {

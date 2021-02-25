@@ -4,7 +4,8 @@ using UnityEngine;
 
 
 [CreateAssetMenu(menuName = "Scriptable/FloatValue")]
-public class FloatValue : ScriptableObject, ISerializationCallbackReceiver
+[System.Serializable]
+public class FloatValue : ScriptableObject
 {
 
     public float initialValue;
@@ -12,15 +13,5 @@ public class FloatValue : ScriptableObject, ISerializationCallbackReceiver
     [HideInInspector]
     public float RuntimeValue;
 
-
-    public void OnBeforeSerialize()
-    {
-
-    }
-
-    public void OnAfterDeserialize()
-    {
-        RuntimeValue = initialValue;
-    }
 
 }
