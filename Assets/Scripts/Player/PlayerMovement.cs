@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using DG.Tweening;
 
 public enum PlayerState
 {
@@ -18,9 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public PlayerState currentState;
 
     [Header("Player Atrributes")]    
-    public float speed;
-    public FloatValue currentHealth;
-    public SignalSender playerHealthSignal;
+    public float speed;    
     public VectorValue startingPosition;
 
     private Rigidbody2D myRigidBody;
@@ -142,8 +141,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void Knock(float knockbackTime, float damage)
+    public void Knock(float knockbackTime)
     {
+        StartCoroutine(KnockCoroutine(knockbackTime));
+        /*
         currentHealth.RuntimeValue -= damage;
         playerHealthSignal.Raise();
         if (currentHealth.RuntimeValue > 0)
@@ -155,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
-        
+        */
     }
 
     public void RaiseItem()

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe10fe42a1e85429fba0de45ee14b7b4, type: 3}
+  m_Name: GreenHealthPotion
+  m_EditorClassIdentifier: 
+  itemName: Green Potion
+  description: It is green and, well green
+  itemImage: {fileID: -5113221092223890732, guid: 0cfc8aa3475eb4399b299150cc928b28, type: 3}
+  numberHeld: 0
+  usuable: 1
+  unique: 0
+  thisEvent:
+    m_PersistentCalls:
+      m_Calls: []

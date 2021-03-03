@@ -24,6 +24,7 @@ public class Coins : PowerUP
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             playerInventory.coins += coinValue;
+            SaveGameManager.instance.activeSave.money += coinValue;
             powerupSignal.Raise();
             Destroy(this.gameObject);
         }

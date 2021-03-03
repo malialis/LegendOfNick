@@ -44,10 +44,9 @@ public class Enemy : MonoBehaviour
         currentState = EnemyState.idle;
     }
 
-    public void Knock(Rigidbody2D myRigidbody, float knockbackTime, float damage)
+    public void Knock(Rigidbody2D myRigidbody, float knockbackTime)
     {
-        StartCoroutine(KnockCoroutine(myRigidbody, knockbackTime));
-        TakeDamage(damage);
+        StartCoroutine(KnockCoroutine(myRigidbody, knockbackTime));       
     }
 
     private IEnumerator KnockCoroutine(Rigidbody2D myRigidbody, float knockbackTime)

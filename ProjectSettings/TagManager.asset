@@ -9,6 +9,9 @@ TagManager:
   - EnemyProjectile
   - PlayerProjectile
   - NPC
+  - Room
+  - VirtualCamera
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -25,7 +28,7 @@ TagManager:
   - PlayerProjectile
   - NPC
   - MiniMap
-  - 
+  - Items
   - 
   - 
   - 
