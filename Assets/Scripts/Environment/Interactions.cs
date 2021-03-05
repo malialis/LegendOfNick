@@ -35,8 +35,7 @@ public class Interactions : MonoBehaviour
         {
             context.Raise();
             //Debug.Log("Player has left yo");
-            playerInRange = false;
-            //dialogBox.SetActive(false);
+            playerInRange = false;           
         }
     }
 

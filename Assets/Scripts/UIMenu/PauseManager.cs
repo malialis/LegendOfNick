@@ -29,11 +29,12 @@ public class PauseManager : MonoBehaviour
         //SwitchPanels();
     }
 
-    public void Pause(InputAction.CallbackContext context)
+   /* public void Pause(InputAction.CallbackContext context)
     {
         isPaused = !isPaused;
         ChangePauseState();
     }
+   */
 
     public void ChangePauseState()
     {

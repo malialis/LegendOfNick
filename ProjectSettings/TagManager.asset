@@ -12,6 +12,7 @@ TagManager:
   - Room
   - VirtualCamera
   - UI
+  - Border
   layers:
   - Default
   - TransparentFX

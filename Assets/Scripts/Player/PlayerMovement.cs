@@ -17,10 +17,12 @@ public enum PlayerState
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
+    public static PlayerMovement instance;
 
     [Header("Player Atrributes")]    
     public float speed;    
     public VectorValue startingPosition;
+    public bool canMove;
 
     private Rigidbody2D myRigidBody;
     private Animator animator;
@@ -54,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {        
         playerInput = new ThePlayerInput();
+        instance = this;
     }
 
     private void OnEnable()
@@ -73,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
 
         currentState = PlayerState.walk;
+        canMove = true;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
 
@@ -116,6 +120,7 @@ public class PlayerMovement : MonoBehaviour
         if (change != Vector3.zero)
         {
             MoveCharacter();
+            canMove = true;
             change.x = Mathf.Round(change.x);
             change.y = Mathf.Round(change.y);
             animator.SetFloat("moveX", change.x);
@@ -124,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            animator.SetBool("moving", false);
+            animator.SetBool("moving", false);            
         }
     }
 
@@ -317,6 +322,12 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(SecondWeaponAttackCoroutine());
         }
     }
+
+    public void Pause(InputAction.CallbackContext context)
+    {
+        GameMenu.instance.OpenMenuScreen();        
+    }
+
 
     #endregion
 
